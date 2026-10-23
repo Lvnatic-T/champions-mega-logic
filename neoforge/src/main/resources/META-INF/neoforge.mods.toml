@@ -1,0 +1,25 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "champions_mega_logic"
+version = "${version}"
+displayName = "Cobblemon: Champions Mega Logic"
+displayTest = "IGNORE_SERVER_VERSION"
+authors = "Lvnatic"
+description = '''Fixes visual Mega Evolution reversion when revived during battle.'''
+
+[[dependencies.champions_mega_logic]]
+modId = "cobblemon"
+type = "required"
+versionRange = "[1.8.2,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.champions_mega_logic]]
+modId = "mega_showdown"
+type = "required"
+versionRange = "[1.3.1,)"
+ordering = "AFTER"
+side = "BOTH"

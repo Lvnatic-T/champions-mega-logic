@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "champions_mega_logic",
+  "version": "${version}",
+  "name": "Cobblemon: Champions Mega Logic",
+  "description": "Fixes visual Mega Evolution reversion when revived during battle.",
+  "authors": ["Lvnatic"],
+  "license": "All Rights Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["net.lvnatic.megarevivefix.fabric.MegaReviveFixFabric"]
+  },
+  "depends": {
+    "cobblemon": ">=1.8.2",
+    "mega_showdown": ">=1.3.1"
+  }
+}

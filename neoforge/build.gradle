@@ -1,0 +1,17 @@
+architectury {
+    platformSetupLoomIde()
+    neoForge()
+}
+
+dependencies {
+    neoForge "net.neoforged:neoforge:${rootProject.neoforge_version}"
+    modImplementation "com.cobblemon:neoforge:${rootProject.cobblemon_version}"
+    compileOnly "org.jetbrains.kotlin:kotlin-stdlib:2.2.21"
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('META-INF/neoforge.mods.toml') {
+        expand version: project.version
+    }
+}
