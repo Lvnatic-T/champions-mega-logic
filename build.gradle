@@ -31,9 +31,11 @@ subprojects {
     dependencies {
         minecraft "net.minecraft:minecraft:${rootProject.minecraft_version}"
         mappings loom.officialMojangMappings()
+        compileOnly 'org.jetbrains.kotlin:kotlin-stdlib:2.2.21'
     }
 
     sourceSets.main.java.srcDir(rootProject.file('src/main/java'))
+    sourceSets.main.resources.srcDir(rootProject.file('src/main/resources'))
 
     java {
         sourceCompatibility = JavaVersion.VERSION_21
